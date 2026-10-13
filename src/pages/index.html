@@ -40,10 +40,11 @@ head:
     </div>
     <div class="hero__in">
       <p class="hero__dev" lang="hi">अंतर्वन</p>
-      <h1>The forest<br><em>within</em></h1>
+      <h1 data-split>The forest<br><em>within</em></h1>
       <p class="hero__sub">A glasshouse on Vesu Canal Road, planted on every side. Pure-vegetarian
         cooking that travels from the tandoor to the wok to the sushi counter, served under a
         glass roof that is at its best in the rain.</p>
+      <p class="state" data-open-state hidden></p>
       <div class="hero__acts">
         <a class="btn btn--solid" href="menu.html">Read the menu</a>
         <a class="btn btn--ghost" href="visit.html">Find us</a>
@@ -57,26 +58,33 @@ head:
     <div class="shell intro">
       <div class="reveal">
         <p class="eyebrow">Antar, within &nbsp;·&nbsp; van, forest</p>
-        <h2>A room built to let the <em>garden</em> in</h2>
+        <h2 data-split>A room built to let the <em>garden</em> in</h2>
         <p class="lede">The name says what the room does. Green steel ribs, arched glazing,
           sheer drapes and a chequerboard marble floor — and beyond every pane, planting
           pressed right up against the glass.</p>
-        <p>Lamps come on early here, so late lunch and dinner feel like the same soft hour.
+        <p class="dropcap">Lamps come on early here, so late lunch and dinner feel like the same soft hour.
           The kitchen is pure vegetarian from end to end, and it cooks in several languages at
           once: hot stone bowls and dim sum, a sushi counter, a tandoor, hummus and empanadas,
           and a dessert list that ends in payasam.</p>
         <p><a class="room__more" href="rooms.html">See both rooms &rarr;</a></p>
       </div>
       <div class="intro__art reveal">
-        <img src="assets/img/glasshouse-illustration.webp" alt="" loading="lazy" width="1024" height="1024">
+        <img src="assets/img/glasshouse-illustration.webp" alt="" loading="lazy" width="1024" height="1024" data-parallax="0.09">
       </div>
     </div>
   </section>
 
-  <section class="section section--forest">
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Cheung Fun</span><span>Singaporean Laksa</span><span>Truffle Naan</span><span>Ponzu Crunch Roll</span><span>House Black Dal</span><span>Thai Crispy Tofu Bao</span><span>Raspberry Coconut Payasam</span><span>Barrel-Aged Cold Brew</span>
+      <span>Cheung Fun</span><span>Singaporean Laksa</span><span>Truffle Naan</span><span>Ponzu Crunch Roll</span><span>House Black Dal</span><span>Thai Crispy Tofu Bao</span><span>Raspberry Coconut Payasam</span><span>Barrel-Aged Cold Brew</span>
+    </div>
+  </div>
+
+  <section class="section section--forest" data-glow>
     <div class="shell">
       <p class="eyebrow reveal">Two rooms</p>
-      <h2 class="reveal">Glass overhead, or <em>leaves</em> overhead</h2>
+      <h2 class="reveal" data-split>Glass overhead, or <em>leaves</em> overhead</h2>
       <div class="rooms">
         <a class="room reveal" href="rooms.html#glasshouse">
           <div class="room__frame">
@@ -109,7 +117,7 @@ head:
   <section class="section">
     <div class="shell">
       <p class="eyebrow reveal">From the menu</p>
-      <h2 class="reveal">Three things to <em>order</em> first</h2>
+      <h2 class="reveal" data-split>Three things to <em>order</em> first</h2>
       <div class="plates">
         <article class="plate reveal">
           <div class="plate__frame">
@@ -149,6 +157,19 @@ head:
     </div>
   </section>
 
+  <section class="band" data-glow>
+    <div class="band__img" data-parallax="0.18">
+      <picture>
+        <source srcset="assets/img/laksa-hands.webp" type="image/webp">
+        <img src="assets/img/laksa-hands.jpg" alt="A hot stone bowl of laksa carried to the table" loading="lazy">
+      </picture>
+    </div>
+    <div class="band__in">
+      <p class="eyebrow">In the pass</p>
+      <h2 data-split>Everything leaves the kitchen <em>pure vegetarian</em></h2>
+    </div>
+  </section>
+
   <section class="kitchen" aria-label="The kitchen">
     <img src="assets/img/chef-1.jpg" srcset="assets/img/chef-1.webp" alt="A cook plating at the pass" loading="lazy">
     <img src="assets/img/chef-2.jpg" srcset="assets/img/chef-2.webp" alt="A cook at work in the kitchen" loading="lazy">
@@ -167,11 +188,12 @@ head:
     </div>
   </section>
 
-  <section class="section section--forest">
+  <section class="section section--forest" data-glow>
     <div class="shell strip">
       <div class="reveal">
         <p class="eyebrow">Come and sit</p>
-        <h2>Open every day, <em>noon to midnight</em></h2>
+        <h2 data-split>Open every day, <em>noon to midnight</em></h2>
+        <p class="state" data-open-state hidden></p>
         <ul class="strip__facts">
           <li><b>Where</b><span>Vesu Canal Road, beside DMD Pacific, opposite Avenue 77, Vesu, Surat 395007</span></li>
           <li><b>Hours</b><span>12 noon – midnight, all week</span></li>
@@ -183,7 +205,7 @@ head:
       <div class="strip__img reveal">
         <picture>
           <source srcset="assets/img/chandelier.webp" type="image/webp">
-          <img src="assets/img/chandelier.jpg" alt="A chandelier lit above the dining room" loading="lazy">
+          <img src="assets/img/chandelier.jpg" alt="A chandelier lit above the dining room" loading="lazy" data-parallax="0.14">
         </picture>
       </div>
     </div>

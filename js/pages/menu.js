@@ -1,4 +1,5 @@
 import { reveal } from '../core.js';
+import { lightbox, splitHeadings } from '../motion.js';
 import { food, drinks } from '../menu-data.js';
 
 const lists = { food, drinks };
@@ -28,7 +29,7 @@ function render(which) {
   out.innerHTML = sections.map((s) => `
     <section class="course reveal" id="${s.id}">
       <div class="course__head">
-        <h2>${esc(s.name)}</h2>
+        <h2 data-split>${esc(s.name)}</h2>
         ${s.note ? `<p class="course__note">${esc(s.note)}</p>` : ''}
       </div>
       <div class="dishes">${s.items.map(dish).join('')}</div>
@@ -38,6 +39,7 @@ function render(which) {
     .join('');
   tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.list === which)));
   reveal(out);
+  splitHeadings(out);
   filter();
 }
 
@@ -62,3 +64,4 @@ tabs.forEach((t) => t.addEventListener('click', () => render(t.dataset.list)));
 search.addEventListener('input', filter);
 
 render('food');
+lightbox('.tile');

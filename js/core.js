@@ -1,3 +1,5 @@
+import { playIn } from './motion.js';
+
 /* Shared behaviour: the mobile nav, the sticky-nav shade and scroll reveals.
    Everything here degrades to a perfectly readable page without JS. */
 
@@ -29,18 +31,11 @@ const motionOK = !matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 export function reveal(root = document) {
   const targets = root.querySelectorAll('.reveal:not(.is-in)');
-  if (!motionOK || !('IntersectionObserver' in window)) {
+  if (!motionOK) {
     targets.forEach((el) => el.classList.add('is-in'));
     return;
   }
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (!entry.isIntersecting) return;
-      setTimeout(() => entry.target.classList.add('is-in'), i * 70);
-      io.unobserve(entry.target);
-    });
-  }, { rootMargin: '0px 0px -12% 0px' });
-  targets.forEach((el) => io.observe(el));
+  targets.forEach((el) => playIn(el, 'is-in'));
 }
 
 window.__antarvanReady = true;
