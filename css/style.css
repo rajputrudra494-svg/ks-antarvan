@@ -508,11 +508,13 @@ body::after {
 .lb__close:hover, .lb__nav:hover { background: var(--lamp); border-color: var(--lamp); color: var(--forest-deep); }
 .lb__close { position: absolute; top: clamp(1rem, 3vw, 2rem); right: clamp(1rem, 3vw, 2rem); }
 @media (max-width: 620px) {
-  .lb { grid-template-columns: 1fr; grid-template-rows: 1fr auto; }
-  .lb__fig { grid-row: 1; }
-  .lb__nav { grid-row: 2; }
-  .lb__nav--prev { justify-self: start; }
-  .lb__nav--next { justify-self: end; grid-column: 1; grid-row: 2; }
+  .lb.is-open { grid-template-columns: 1fr; }
+  .lb__fig { grid-area: 1 / 1; }
+  .lb__fig img { max-height: 62svh; }
+  .lb__nav { position: absolute; bottom: clamp(1.2rem, 5vw, 2.5rem); }
+  .lb__nav--prev { left: 22%; }
+  .lb__nav--next { right: 22%; }
+}
 }
 
 /* cards lift a little */
