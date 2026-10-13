@@ -1,0 +1,73 @@
+<!--
+title: Menu — K's Antarvan, Vesu
+description: The full pure-vegetarian menu at K's Antarvan — soups, salads, hot stone bowls, dim sum, sushi, tandoor, Asian and Indian mains, breads and desserts, plus coffee, matcha, teas and mocktails.
+-->
+  <section class="phead">
+    <div class="shell">
+      <p class="eyebrow">Pure vegetarian, end to end</p>
+      <h1>The <em>menu</em></h1>
+      <p class="lede">Everything below is transcribed from the kitchen&rsquo;s own menu cards.
+        Dishes change with the season — the printed cards at the table are the last word.</p>
+    </div>
+  </section>
+
+  <div class="menubar">
+    <div class="menubar__in">
+      <div class="menubar__tabs" role="tablist" aria-label="Menu type">
+        <button class="tab" role="tab" data-list="food" aria-selected="true">Food</button>
+        <button class="tab" role="tab" data-list="drinks" aria-selected="false">Drinks</button>
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <label class="sr" for="menuSearch">Search the menu</label>
+        <input id="menuSearch" type="search" placeholder="Search dishes, ingredients…" autocomplete="off">
+      </div>
+    </div>
+  </div>
+
+  <nav class="menu__jump" id="jump" aria-label="Jump to a course"></nav>
+
+  <div class="shell">
+    <div id="courses"></div>
+    <p class="menu__empty" id="menuEmpty" hidden>Nothing on the menu matches that. Try another word.</p>
+
+    <noscript>
+      <p class="menu__empty">The menu list needs JavaScript. The full menus are also available
+        as PDFs below.</p>
+    </noscript>
+
+    <div class="notice">
+      Pure vegetarian throughout. Jain and no onion&ndash;garlic preparations are made on
+      request — tell the team at the table. Vegan milk in any coffee at &#8377;100.
+      If you have any food allergies, please inform our team.
+    </div>
+
+    <p class="menu__foot">
+      <a class="btn btn--dark" href="assets/menus/ks-antarvan-food-menu.pdf" target="_blank" rel="noopener">Food menu (PDF)</a>
+      <a class="btn btn--dark" href="assets/menus/ks-antarvan-beverages-menu.pdf" target="_blank" rel="noopener">Beverages menu (PDF)</a>
+      <a class="btn btn--ghost" href="tel:+917433002002">Book a table</a>
+    </p>
+  </div>
+
+  <section class="section">
+    <div class="shell">
+      <div class="tiles">
+        <figure class="tile reveal">
+          <picture><source srcset="assets/img/lunch-seekh.webp" type="image/webp"><img src="assets/img/lunch-seekh.jpg" alt="Seekh kebab from the tandoor" loading="lazy"></picture>
+          <figcaption>From the tandoor</figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <picture><source srcset="assets/img/tacos.webp" type="image/webp"><img src="assets/img/tacos.jpg" alt="Mexican plates at the table" loading="lazy"></picture>
+          <figcaption>Mexican, at the same table</figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <picture><source srcset="assets/img/friedrice-curry.webp" type="image/webp"><img src="assets/img/friedrice-curry.jpg" alt="Fried rice and curry served together" loading="lazy"></picture>
+          <figcaption>Rice and curry, Asian side</figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <picture><source srcset="assets/img/palak.webp" type="image/webp"><img src="assets/img/palak.jpg" alt="A green Indian curry served in a copper bowl" loading="lazy"></picture>
+          <figcaption>And the Indian side</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>

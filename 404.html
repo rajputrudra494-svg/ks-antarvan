@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Not found — K's Antarvan</title>
+  <meta name="description" content="That page is not here. Head back to the menu, the rooms, or the way to find us.">
+  <meta name="theme-color" content="#16281e">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="K's Antarvan">
+  <meta property="og:title" content="Not found — K's Antarvan">
+  <meta property="og:description" content="That page is not here. Head back to the menu, the rooms, or the way to find us.">
+  <meta property="og:image" content="assets/img/interior-glasshouse.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..600&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      // ES modules do not load over file://, and a blocked script would leave the
+      // reveal-on-scroll blocks invisible. If nothing has booted, show the plain page.
+      setTimeout(function () { if (!window.__antarvanReady) d.classList.remove('js'); }, 2500);
+    })();
+  </script>
+
+</head>
+<body data-page="404">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav" id="nav">
+    <a class="nav__mark" href="index.html" aria-label="K's Antarvan — home">
+      <span class="nav__k">K'</span>
+      <span class="nav__dev" lang="hi">अंतर्वन</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+      <span class="nav__bars" aria-hidden="true"></span>
+      <span class="sr">Menu</span>
+    </button>
+    <nav class="nav__menu" id="navMenu" aria-label="Primary">
+      <a data-nav="index" href="index.html">Home</a>
+      <a data-nav="menu" href="menu.html">Menu</a>
+      <a data-nav="rooms" href="rooms.html">The rooms</a>
+      <a data-nav="visit" href="visit.html">Visit</a>
+      <a class="nav__cta" href="tel:+917433002002">Book a table</a>
+    </nav>
+  </header>
+
+  <main id="main">
+<section class="lost">
+    <div class="shell">
+      <p class="eyebrow">404</p>
+      <h1>Nothing <em>here</em></h1>
+      <p class="lede" style="margin-inline:auto">That page has wandered off into the planting.
+        Try the menu, the rooms, or the way to find us.</p>
+      <p class="menu__foot" style="justify-content:center">
+        <a class="btn btn--dark" href="index.html">Home</a>
+        <a class="btn btn--ghost" href="menu.html">Menu</a>
+        <a class="btn btn--ghost" href="visit.html">Visit</a>
+      </p>
+      <img src="assets/img/outhouse-sketch.png" alt="" loading="lazy">
+    </div>
+  </section>
+
+  </main>
+  <footer class="foot">
+    <div class="foot__in">
+      <div class="foot__brand">
+        <span class="foot__dev" lang="hi">अंतर्वन</span>
+        <p class="foot__gloss"><em>antar</em>, within &nbsp;·&nbsp; <em>van</em>, forest</p>
+      </div>
+      <div class="foot__col">
+        <h2>Find us</h2>
+        <p>Vesu Canal Road, beside DMD Pacific,<br>opposite Avenue 77, Vesu,<br>Surat, Gujarat 395007</p>
+        <p><a href="https://maps.google.com/?q=K%27s+Antarvan+Vesu+Canal+Road+Surat" target="_blank" rel="noopener">Open in Maps</a></p>
+      </div>
+      <div class="foot__col">
+        <h2>Hours</h2>
+        <p>Every day, 12 noon – midnight<br><span class="muted">Call ahead on festival evenings.</span></p>
+        <h2>Reach us</h2>
+        <p><a href="tel:+917433002002">+91 74330 02002</a><br>
+           <a href="https://wa.me/917433002002" target="_blank" rel="noopener">WhatsApp</a> ·
+           <a href="https://www.instagram.com/ks_antarvan/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+      <div class="foot__col">
+        <h2>Menus</h2>
+        <p><a href="menu.html">Read the menu</a><br>
+           <a href="assets/menus/ks-antarvan-food-menu.pdf" target="_blank" rel="noopener">Food (PDF)</a><br>
+           <a href="assets/menus/ks-antarvan-beverages-menu.pdf" target="_blank" rel="noopener">Beverages (PDF)</a></p>
+        <p class="muted">Pure vegetarian. Jain and no onion–garlic preparations on request.</p>
+      </div>
+    </div>
+    <p class="foot__rule">If you have any food allergies, please inform our team.</p>
+  </footer>
+
+  <script type="module" src="js/pages/404.js"></script>
+</body>
+</html>

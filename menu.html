@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — K's Antarvan, Vesu</title>
+  <meta name="description" content="The full pure-vegetarian menu at K's Antarvan — soups, salads, hot stone bowls, dim sum, sushi, tandoor, Asian and Indian mains, breads and desserts, plus coffee, matcha, teas and mocktails.">
+  <meta name="theme-color" content="#16281e">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="K's Antarvan">
+  <meta property="og:title" content="Menu — K's Antarvan, Vesu">
+  <meta property="og:description" content="The full pure-vegetarian menu at K's Antarvan — soups, salads, hot stone bowls, dim sum, sushi, tandoor, Asian and Indian mains, breads and desserts, plus coffee, matcha, teas and mocktails.">
+  <meta property="og:image" content="assets/img/interior-glasshouse.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..600&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      // ES modules do not load over file://, and a blocked script would leave the
+      // reveal-on-scroll blocks invisible. If nothing has booted, show the plain page.
+      setTimeout(function () { if (!window.__antarvanReady) d.classList.remove('js'); }, 2500);
+    })();
+  </script>
+
+</head>
+<body data-page="menu">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav" id="nav">
+    <a class="nav__mark" href="index.html" aria-label="K's Antarvan — home">
+      <span class="nav__k">K'</span>
+      <span class="nav__dev" lang="hi">अंतर्वन</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+      <span class="nav__bars" aria-hidden="true"></span>
+      <span class="sr">Menu</span>
+    </button>
+    <nav class="nav__menu" id="navMenu" aria-label="Primary">
+      <a data-nav="index" href="index.html">Home</a>
+      <a data-nav="menu" aria-current="page" href="menu.html">Menu</a>
+      <a data-nav="rooms" href="rooms.html">The rooms</a>
+      <a data-nav="visit" href="visit.html">Visit</a>
+      <a class="nav__cta" href="tel:+917433002002">Book a table</a>
+    </nav>
+  </header>
+
+  <main id="main">
+<section class="phead">
+    <div class="shell">
+      <p class="eyebrow">Pure vegetarian, end to end</p>
+      <h1>The <em>menu</em></h1>
+      <p class="lede">Everything below is transcribed from the kitchen&rsquo;s own menu cards.
+        Dishes change with the season — the printed cards at the table are the last word.</p>
+    </div>
+  </section>
+
+  <div class="menubar">
+    <div class="menubar__in">
+      <div class="menubar__tabs" role="tablist" aria-label="Menu type">
+        <button class="tab" role="tab" data-list="food" aria-selected="true">Food</button>
+        <button class="tab" role="tab" data-list="drinks" aria-selected="false">Drinks</button>
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <label class="sr" for="menuSearch">Search the menu</label>
+        <input id="menuSearch" type="search" placeholder="Search dishes, ingredients…" autocomplete="off">
+      </div>
+    </div>
+  </div>
+
+  <nav class="menu__jump" id="jump" aria-label="Jump to a course"></nav>
+
+  <div class="shell">
+    <div id="courses"></div>
+    <p class="menu__empty" id="menuEmpty" hidden>Nothing on the menu matches that. Try another word.</p>
+
+    <noscript>
+      <p class="menu__empty">The menu list needs JavaScript. The full menus are also available
+        as PDFs below.</p>
+    </noscript>
+
+    <div class="notice">
+      Pure vegetarian throughout. Jain and no onion&ndash;garlic preparations are made on
+      request — tell the team at the table. Vegan milk in any coffee at &#8377;100.
+      If you have any food allergies, please inform our team.
+    </div>
+
+    <p class="menu__foot">
+      <a class="btn btn--dark" href="assets/menus/ks-antarvan-food-menu.pdf" target="_blank" rel="noopener">Food menu (PDF)</a>
+      <a class="btn btn--dark" href="assets/menus/ks-antarvan-beverages-menu.pdf" target="_blank" rel="noopener">Beverages menu (PDF)</a>
+      <a class="btn btn--ghost" href="tel:+917433002002">Book a table</a>
+    </p>
+  </div>
+
+  <section class="section">
+    <div class="shell">
+      <div class="tiles">
+        <figure class="tile reveal">
+          <picture><source srcset="assets/img/lunch-seekh.webp" type="image/webp"><img src="assets/img/lunch-seekh.jpg" alt="Seekh kebab from the tandoor" loading="lazy"></picture>
+          <figcaption>From the tandoor</figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <picture><source srcset="assets/img/tacos.webp" type="image/webp"><img src="assets/img/tacos.jpg" alt="Mexican plates at the table" loading="lazy"></picture>
+          <figcaption>Mexican, at the same table</figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <picture><source srcset="assets/img/friedrice-curry.webp" type="image/webp"><img src="assets/img/friedrice-curry.jpg" alt="Fried rice and curry served together" loading="lazy"></picture>
+          <figcaption>Rice and curry, Asian side</figcaption>
+        </figure>
+        <figure class="tile reveal">
+          <picture><source srcset="assets/img/palak.webp" type="image/webp"><img src="assets/img/palak.jpg" alt="A green Indian curry served in a copper bowl" loading="lazy"></picture>
+          <figcaption>And the Indian side</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  <footer class="foot">
+    <div class="foot__in">
+      <div class="foot__brand">
+        <span class="foot__dev" lang="hi">अंतर्वन</span>
+        <p class="foot__gloss"><em>antar</em>, within &nbsp;·&nbsp; <em>van</em>, forest</p>
+      </div>
+      <div class="foot__col">
+        <h2>Find us</h2>
+        <p>Vesu Canal Road, beside DMD Pacific,<br>opposite Avenue 77, Vesu,<br>Surat, Gujarat 395007</p>
+        <p><a href="https://maps.google.com/?q=K%27s+Antarvan+Vesu+Canal+Road+Surat" target="_blank" rel="noopener">Open in Maps</a></p>
+      </div>
+      <div class="foot__col">
+        <h2>Hours</h2>
+        <p>Every day, 12 noon – midnight<br><span class="muted">Call ahead on festival evenings.</span></p>
+        <h2>Reach us</h2>
+        <p><a href="tel:+917433002002">+91 74330 02002</a><br>
+           <a href="https://wa.me/917433002002" target="_blank" rel="noopener">WhatsApp</a> ·
+           <a href="https://www.instagram.com/ks_antarvan/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+      <div class="foot__col">
+        <h2>Menus</h2>
+        <p><a href="menu.html">Read the menu</a><br>
+           <a href="assets/menus/ks-antarvan-food-menu.pdf" target="_blank" rel="noopener">Food (PDF)</a><br>
+           <a href="assets/menus/ks-antarvan-beverages-menu.pdf" target="_blank" rel="noopener">Beverages (PDF)</a></p>
+        <p class="muted">Pure vegetarian. Jain and no onion–garlic preparations on request.</p>
+      </div>
+    </div>
+    <p class="foot__rule">If you have any food allergies, please inform our team.</p>
+  </footer>
+
+  <script type="module" src="js/pages/menu.js"></script>
+</body>
+</html>
