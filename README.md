@@ -20,6 +20,12 @@ filtering and the scroll animation.
   heading stuck invisible, and the whole layer switches itself off under
   `prefers-reduced-motion`.
 - `js/menu-data.js` — every dish, transcribed from the PDFs in `assets/menus/`.
+- `js/effects.js` — rain on the hero glass (canvas), the arrival curtain, the
+  lamp cursor, scroll progress, magnetic buttons, card tilt, counters, the
+  back-to-top button, the scroll-reactive marquee and the menu scrollspy. One
+  rAF loop drives all of it. Page-to-page motion is the browser's own
+  cross-document view transitions (`@view-transition` in the stylesheet), not
+  intercepted clicks, so navigation cannot break.
 - `js/pages/*.js` — one entry per page; `menu.js` renders and filters the menu.
 - `_research/` — notes behind the copy, with sources and the two open questions
   (exact closing time, which phone number is current). Read `_research/notes.md`

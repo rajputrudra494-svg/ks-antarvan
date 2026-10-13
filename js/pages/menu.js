@@ -1,5 +1,6 @@
 import { reveal } from '../core.js';
 import { lightbox, splitHeadings } from '../motion.js';
+import { spy, counters } from '../effects.js';
 import { food, drinks } from '../menu-data.js';
 
 const lists = { food, drinks };
@@ -10,6 +11,7 @@ const search = document.getElementById('menuSearch');
 const empty = document.getElementById('menuEmpty');
 
 let current = 'food';
+let refreshSpy = null;
 
 const esc = (s) => s.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 
@@ -40,6 +42,8 @@ function render(which) {
   tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.list === which)));
   reveal(out);
   splitHeadings(out);
+  refreshSpy = spy('#jump a', '.course');
+  counters(out);
   filter();
 }
 
@@ -57,6 +61,7 @@ function filter() {
     hits += shown;
   });
   empty.hidden = hits > 0;
+  refreshSpy?.();
   jump.hidden = !!q;
 }
 

@@ -1,4 +1,5 @@
 import { playIn } from './motion.js';
+import { curtain, cursor, progress, magnetic, tilt, toTop, liveMarquee, counters } from './effects.js';
 
 /* Shared behaviour: the mobile nav, the sticky-nav shade and scroll reveals.
    Everything here degrades to a perfectly readable page without JS. */
@@ -40,3 +41,12 @@ export function reveal(root = document) {
 
 window.__antarvanReady = true;
 reveal();
+
+curtain();
+cursor();
+progress();
+magnetic();
+tilt();
+toTop();
+liveMarquee();
+counters();
